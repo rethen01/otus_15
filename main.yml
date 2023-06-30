@@ -1,0 +1,9 @@
+---
+  - name: 'test'
+    become: true
+    hosts: nginx
+    roles:
+      - nginx
+
+  
+  

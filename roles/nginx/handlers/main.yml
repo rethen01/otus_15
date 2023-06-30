@@ -1,0 +1,14 @@
+---
+  - name: Update
+    ansible.builtin.yum:
+      update_cache: yes
+  - name: Start nginx
+    ansible.builtin.systemd:
+      name: nginx
+      state: started
+  - name: Reload nginx
+    ansible.builtin.systemd:
+      name: nginx
+      state: reloaded
+
+
